@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title><%= title %> </title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <h2>橡树文件管理</h2>
+            </header>
+            <div id="top">
+                <a id="down" href="data">下载</a>
+            </div>
+            <div id="bottom">
+                <div id="form">
+                    <form id="upload" action="/uploadFile" method="post" enctype="multipart/form-data">
+                        <p><span>app：</span><input type="file" name="app" /></p>
+                        <p><span>配置文件：</span><input type="file" name="config" /></p>
+                        <p><span>登陆器：</span><input type="file" name="ole" /></p>
+                        <p><span>其它：</span><input type="file" name="other" /></p>
+                        <p><input type="submit" value="上传" /></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./javascripts/public.js"></script>
+</html>

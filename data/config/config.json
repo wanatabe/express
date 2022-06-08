@@ -1,0 +1,42 @@
+{
+    "hieipServer": "http://10.0.0.230:7001",
+    "medicalServer": "http://10.0.0.230:7002",
+    "publicResServer": "http://10.0.0.230:7006",
+    "messageServer": "ws://10.0.0.230:7007",
+    "updaterServer": "http://10.1.2.131:8080",
+    "printServer": "http://10.0.0.230:7700",
+    "oosServer": "http://10.1.2.131:7005",
+    "deviceServer": "ws://10.1.2.124:9999",
+    "readCardServer": "ws://10.1.2.124:9998",
+    "codeServer": "http://10.0.0.111:7008",
+    "monitorServer": "http://10.0.3.11:5700",
+    "monitorDecoderServer": "http://10.0.3.11:8011",
+    "appServer": "http://10.0.0.230:7011",
+    "fiveCenterServer": "http://10.0.0.230:7013",
+    "ntpServer": "10.0.0.231",
+    "window": {
+        "minWidth": 536,
+        "minHeight": 374
+    },
+    "dev": {
+        "main": {
+            "port": 3000,
+            "host": "0.0.0.0"
+        },
+        "test": {
+            "port": 3200,
+            "host": "0.0.0.0"
+        }
+    },
+    "redis": {
+        "host": "10.0.0.111",
+        "db": 27
+    },
+    "admin": "68719595882",
+    "offline": false,
+    "loginType": "intranet",
+    "proxy": {
+        "/HICIP/dist/*/": "http://127.0.0.1:3002",
+        "*": "http://172.21.30.51:8080"
+    }
+}
